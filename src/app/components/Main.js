@@ -37,10 +37,10 @@ export class Main extends React.Component {
                     <div className="nav-wrapper orange darken-2">
                         <ul className="left">
                             <li><a href="#">TRANSITIONS</a></li>
-                            <li className="active"><a href="#">ANIMATIONS</a></li>
+                            <li><a href="#">ANIMATIONS</a></li>
+                            <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
+                            <li className="active"><a href="#">REACTJS + CSS ANIMATIONS</a></li>
                             <li><a href="#">JS ANIMATIONS</a></li>
-                            <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">REACTJS + JS ANIMATIONS</a></li>
                             <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
