@@ -26,8 +26,7 @@ export class Main extends React.Component {
         const newItems = this.state.items.slice();
         newItems.splice(id, 1);
         this.setState({
-            items: newItems,
-            itemNumber: this.state.itemNumber - 1
+            items: newItems
         });
     }
 
@@ -59,7 +58,7 @@ export class Main extends React.Component {
                             <p>Click Item to Delete</p>
                             <ul className="collection">
                                 <ReactCSSTransitionGroup
-                                    transitionName="fade"
+                                    transitionName="flip"
                                     transitionEnterTimeout={300}
                                     transitionLeaveTimeout={300}>
                                     {this.state.items.map((item, i) => {
