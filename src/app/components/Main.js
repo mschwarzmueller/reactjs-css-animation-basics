@@ -1,12 +1,28 @@
 import React from "react";
 
-export class Main extends React.Component{
-    onSeeMore() {
+const styles = {
+    transition: 'all 1s ease-out'
+};
 
+export class Main extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            opacity: 1,
+            scale: 1
+        };
     }
 
-    onDiscard() {
+    onHide() {
+        this.setState({
+            opacity: 0
+        });
+    }
 
+    onScale() {
+        this.setState({
+            scale: this.state.scale > 1 ? 1 : 1.3
+        });
     }
 
     render() {
@@ -33,14 +49,15 @@ export class Main extends React.Component{
 
                     <div className="row">
                         <div className="s8 offset-s2 center-align">
-                            <div className="card deep-purple z-depth-2">
+                            <div className="card deep-purple z-depth-2"
+                                 style={{...styles, opacity: this.state.opacity, transform: 'scale(' + this.state.scale + ')'}}>
                                 <div className="card-content white-text">
                                     <span className="card-title">Awesome Animations!</span>
                                     <p>CSS Animations are pretty cool. But combined with ReactJS ... &lt;3</p>
                                 </div>
                                 <div className="card-action">
-                                    <a onClick={this.onSeeMore} style={{cursor: 'pointer'}}>SEE MORE</a>
-                                    <a onClick={this.onDiscard} style={{cursor: 'pointer'}}>DISCARD</a>
+                                    <a onClick={this.onHide.bind(this)} style={{cursor: 'pointer'}}>HIDE</a>
+                                    <a onClick={this.onScale.bind(this)} style={{cursor: 'pointer'}}>SCALE</a>
                                 </div>
                             </div>
                         </div>
