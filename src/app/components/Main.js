@@ -33,9 +33,9 @@ export class Main extends React.Component {
                         <ul className="left">
                             <li className="active"><a href="#">TRANSITIONS</a></li>
                             <li><a href="#">ANIMATIONS</a></li>
-                            <li><a href="#">JS ANIMATIONS</a></li>
+                            <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
                             <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">REACTJS + JS ANIMATIONS</a></li>
+                            <li><a href="#">JS ANIMATIONS</a></li>
                             <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
