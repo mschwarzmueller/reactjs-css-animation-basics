@@ -8,6 +8,33 @@
     <title>ReactJS Basics</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
+    <style>
+        .slide {
+            animation: slide 1s ease-in alternate 2;
+        }
+
+        .flip {
+            animation: flip 2s ease-out alternate 2;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(80px);
+            }
+        }
+
+        @keyframes flip {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>
