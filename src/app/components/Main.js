@@ -57,10 +57,13 @@ export class Main extends React.Component {
                             <a className="waves-effect waves-light btn" onClick={this.onAddItem.bind(this)}>Add Item</a>
                             <p>Click Item to Delete</p>
                             <ul className="collection">
+                                {/* Also mention custom classes! */}
                                 <ReactCSSTransitionGroup
                                     transitionName="fade"
                                     transitionEnterTimeout={300}
-                                    transitionLeaveTimeout={300}>
+                                    transitionLeaveTimeout={300}
+                                    transitionAppear={true}
+                                    transitionAppearTimeout={300}>
                                     {this.state.items.map((item, i) => {
                                         return (
                                             <li key={item} className="collection-item" onClick={this.onDeleteItem.bind(this, i)} style={{cursor: 'pointer'}}>{item}</li>
