@@ -13,32 +13,34 @@
             transform: translateX(-100%);
         }
 
-        .slide-enter.slide-enter-active {
-            animation: slide-in ease-out 300ms forwards;
+        .slide-enter-active {
+            animation: slide-in 300ms ease-out forwards;
         }
 
         .slide-leave {
             transform: translateX(0%);
         }
 
-        .slide-leave.slide-leave-active {
-            animation: slide-out ease-out 300ms forwards;
+        .slide-leave-active {
+            animation: slide-out 300ms ease-out forwards;
         }
 
         @keyframes slide-in {
-            0% {
+            from {
                 transform: translateX(-100%);
             }
-            100% {
+
+            to {
                 transform: translateX(0%);
             }
         }
 
         @keyframes slide-out {
-            0% {
+            from {
                 transform: translateX(0%);
             }
-            100% {
+
+            to {
                 transform: translateX(100%);
             }
         }
@@ -47,36 +49,37 @@
             transform: rotateY(180deg);
         }
 
-        .flip-enter.flip-enter-active {
-            animation: flip-in ease-out 300ms forwards;
+        .flip-enter-active {
+            animation: flip-in 300ms ease-out forwards;
         }
 
         .flip-leave {
             transform: rotateY(0deg);
         }
 
-        .flip-leave.flip-leave-active {
-            animation: flip-out ease-out 300ms forwards;
+        .flip-leave-active {
+            animation: flip-out 300ms ease-out forwards;
         }
 
         @keyframes flip-in {
-            0% {
+            from {
                 transform: rotateY(180deg);
             }
-            100% {
+
+            to {
                 transform: rotateY(0deg);
             }
         }
 
         @keyframes flip-out {
-            0% {
+            from {
                 transform: rotateY(0deg);
             }
-            100% {
+
+            to {
                 transform: rotateY(90deg);
             }
         }
-
     </style>
 </head>
 <body>

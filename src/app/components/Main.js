@@ -40,8 +40,6 @@ export class Main extends React.Component {
                             <li><a href="#">ANIMATIONS</a></li>
                             <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
                             <li className="active"><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">JS ANIMATIONS</a></li>
-                            <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -63,7 +61,10 @@ export class Main extends React.Component {
                                     transitionLeaveTimeout={300}>
                                     {this.state.items.map((item, i) => {
                                         return (
-                                            <li key={item} className="collection-item" onClick={this.onDeleteItem.bind(this, i)} style={{cursor: 'pointer'}}>{item}</li>
+                                            <li key={item}
+                                                className="collection-item"
+                                                onClick={this.onDeleteItem.bind(this, i)}
+                                                style={{cursor: 'pointer'}}>{item}</li>
                                         );
                                     })}
                                 </ReactCSSTransitionGroup>
