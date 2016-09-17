@@ -35,8 +35,6 @@ export class Main extends React.Component {
                             <li><a href="#">ANIMATIONS</a></li>
                             <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
                             <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">JS ANIMATIONS</a></li>
-                            <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
                 </nav>
