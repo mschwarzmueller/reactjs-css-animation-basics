@@ -10,7 +10,7 @@
 
     <style>
         .slide {
-            animation: slide 1s ease-in alternate 2;
+            animation: slide 1s ease-in forwards;
         }
 
         .flip {
@@ -19,8 +19,9 @@
 
         @keyframes slide {
             0% {
-                transform: translateX(0%);
+               transform: translateX(0%);
             }
+
             100% {
                 transform: translateX(80px);
             }
@@ -28,8 +29,9 @@
 
         @keyframes flip {
             0% {
-                transform: rotateY(0deg);
+               transform: rotateY(0deg);
             }
+
             100% {
                 transform: rotateY(180deg);
             }

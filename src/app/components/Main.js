@@ -1,9 +1,5 @@
 import React from "react";
 
-const styles = {
-    transition: 'all 1s ease-out'
-};
-
 export class Main extends React.Component {
     constructor() {
         super();
@@ -37,8 +33,6 @@ export class Main extends React.Component {
                             <li className="active"><a href="#">ANIMATIONS</a></li>
                             <li><a href="#">REACTJS + CSS TRANSITIONS</a></li>
                             <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">JS ANIMATIONS</a></li>
-                            <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -51,8 +45,7 @@ export class Main extends React.Component {
 
                     <div className="row">
                         <div className="s8 offset-s2 center-align">
-                            <div className={"card deep-purple z-depth-2 " + (this.state.slide ? 'slide' : '') + (this.state.flip ? 'flip' : '')}
-                                 style={styles}>
+                            <div className={"card deep-purple z-depth-2 " + (this.state.slide ? 'slide' : '') + (this.state.flip ? 'flip' : '')}>
                                 <div className="card-content white-text">
                                     <span className="card-title">Awesome Animations!</span>
                                     <p>CSS Animations are pretty cool. But combined with ReactJS ... &lt;3</p>
