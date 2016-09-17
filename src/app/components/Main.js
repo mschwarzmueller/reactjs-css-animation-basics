@@ -40,8 +40,6 @@ export class Main extends React.Component {
                             <li><a href="#">ANIMATIONS</a></li>
                             <li className="active"><a href="#">REACTJS + CSS TRANSITIONS</a></li>
                             <li><a href="#">REACTJS + CSS ANIMATIONS</a></li>
-                            <li><a href="#">JS ANIMATIONS</a></li>
-                            <li><a href="#">ROUTING TRANSITIONS</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -57,16 +55,17 @@ export class Main extends React.Component {
                             <a className="waves-effect waves-light btn" onClick={this.onAddItem.bind(this)}>Add Item</a>
                             <p>Click Item to Delete</p>
                             <ul className="collection">
-                                {/* Also mention custom classes! */}
                                 <ReactCSSTransitionGroup
                                     transitionName="fade"
                                     transitionEnterTimeout={300}
                                     transitionLeaveTimeout={300}
                                     transitionAppear={true}
-                                    transitionAppearTimeout={300}>
+                                    transitionAppearTimeout={1000}>
                                     {this.state.items.map((item, i) => {
                                         return (
-                                            <li key={item} className="collection-item" onClick={this.onDeleteItem.bind(this, i)} style={{cursor: 'pointer'}}>{item}</li>
+                                            <li key={item} className="collection-item"
+                                                onClick={this.onDeleteItem.bind(this, i)}
+                                                style={{cursor: 'pointer'}}>{item}</li>
                                         );
                                     })}
                                 </ReactCSSTransitionGroup>

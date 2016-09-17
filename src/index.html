@@ -13,29 +13,28 @@
             opacity: 0;
         }
 
-        .fade-enter.fade-enter-active {
+        .fade-enter-active {
             opacity: 1;
-            transition: all 300ms ease-out;
+            transition: opacity 300ms ease-out;
         }
 
         .fade-leave {
             opacity: 1;
         }
 
-        .fade-leave.fade-leave-active {
+        .fade-leave-active {
             opacity: 0;
-            transition: all 300ms ease-in;
+            transition: opacity 300ms ease-out;
         }
 
         .fade-appear {
             opacity: 0;
         }
 
-        .fade-appear.fade-appear-active {
+        .fade-appear-active {
             opacity: 1;
-            transition: all 300ms ease-out;
+            transition: opacity 1000ms ease-out;
         }
-
     </style>
 </head>
 <body>
